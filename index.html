@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="A beautiful interactive drawing canvas where you can draw, change colors, adjust brush size, and save your artwork as PNG.">
+    <meta name="author" content="[Your Name]">
+    <title>🎨 Magic Drawing Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Magic Drawing Canvas</h1>
+            <p class="subtitle">Click & drag to draw — unleash your creativity!</p>
+        </header>
+        
+        <canvas id="drawingCanvas" width="800" height="500"></canvas>
+        
+        <div class="tools">
+            <div class="tool-group">
+                <label>🎨 Color:</label>
+                <input type="color" id="colorPicker" value="#000000">
+            </div>
+            
+            <div class="tool-group">
+                <label>✏️ Size:</label>
+                <input type="range" id="brushSize" min="1" max="50" value="5">
+                <span id="sizeValue" class="size-value">5px</span>
+            </div>
+            
+            <div class="tool-group">
+                <button id="clearBtn" class="btn btn-clear">🗑️ Clear</button>
+                <button id="saveBtn" class="btn btn-save">💾 Save as PNG</button>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-label">Status:</span>
+                <span id="drawingStatus">Ready to draw 🎨</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
