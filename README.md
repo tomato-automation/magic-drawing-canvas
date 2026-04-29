@@ -15,7 +15,7 @@ Magic Drawing Canvas 🎨 - An interactive web-based drawing application where y
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://tomatoautomation.github.io/magic-drawing-canvas)
+[View Live Demo](https://tomato-automation.github.io/magic-drawing-canvas)
 
 ## 🛠️ Technologies Used
 
